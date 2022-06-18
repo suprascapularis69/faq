@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Regular.woff2") format("woff2"), url("../fonts/KumbhSans-Regular.woff") format("woff"), url("../fonts/KumbhSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper {
+  max-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  padding-top: calc(50vh - 254.5px);
+  padding-bottom: calc(50vh - 254.5px);
+  padding-left: 75px;
+  padding-right: 75px;
+}
+@media (max-width: 540px) {
+  .wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.faq-block {
+  max-width: 920px;
+  min-height: 509px;
+  background: #FFFFFF;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 790px) {
+  .faq-block {
+    flex-direction: column;
+  }
+}
+@media (max-width: 540px) {
+  .faq-block {
+    min-height: 535px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.faq-image {
+  margin-left: -43px;
+  margin-right: 30px;
+}
+@media (max-width: 950px) {
+  .faq-image {
+    width: 40%;
+    height: 40%;
+    margin-left: -32px;
+  }
+}
+@media (max-width: 790px) {
+  .faq-image {
+    display: none;
+  }
+}
+
+.faq-image-mobile {
+  display: none;
+}
+@media (max-width: 790px) {
+  .faq-image-mobile {
+    display: block;
+    margin-top: -106px;
+  }
+}
+
+.faq-text {
+  max-width: 350px;
+  min-height: 361px;
+  margin-right: 95px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 950px) {
+  .faq-text {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 790px) {
+  .faq-text {
+    margin-right: 0;
+  }
+}
+@media (max-width: 540px) {
+  .faq-text {
+    padding-top: 28px;
+    padding-bottom: 48px;
+    width: 100%;
+  }
+}
+
+.faq-heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1E1F36;
+  margin-bottom: 29px;
+}
+@media (max-width: 790px) {
+  .faq-heading {
+    text-align: center;
+  }
+}
+
+.faq-list-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.list-group-item {
+  width: 350px;
+  min-height: 55px;
+  display: block;
+}
+@media (max-width: 540px) {
+  .list-group-item {
+    width: 100%;
+  }
+}
+.list-group-item::after {
+  content: "";
+  width: 350px;
+  height: 1px;
+  position: absolute;
+  background: #E8E8EA;
+}
+@media (max-width: 540px) {
+  .list-group-item::after {
+    width: 100%;
+  }
+}
+
+.list-header {
+  padding: 19px 16px 19px 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 540px) {
+  .list-header {
+    padding-right: 1px;
+  }
+}
+
+.header-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4B4C5F;
+}
+@media (max-width: 540px) {
+  .header-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4B4C5F;
+  }
+}
+@media (max-width: 320px) {
+  .header-text {
+    margin-right: 5px;
+  }
+}
+.header-text:hover {
+  color: #F47B56;
+}
+
+.arrow-down {
+  background-image: url("../images/arrow-down.svg");
+  width: 10px;
+  height: 7px;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.click-text {
+  font-weight: 700;
+}
+
+.list-content {
+  padding: 1px 1px 19px 1px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #787887;
+  padding-bottom: 19px;
+}
+
+.spoiler-body {
+  display: none;
+}
+
+body {
+  font-family: "Kumbh Sans";
+}
