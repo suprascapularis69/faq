@@ -137,11 +137,11 @@
     height: 7px;
 }
 
-.arrow-rotate {
+details[open] summary > .arrow-down {
     transform: rotate(180deg);
 }
 
-.click-text {
+details[open] summary > .header-text {
     font-weight: 700;
 }
 
@@ -149,8 +149,4 @@
     padding: 1px 1px 19px 1px;
     @include font-style(12px, 400, 18px, #787887);
     padding-bottom: 19px;
-}
-
-.spoiler-body {
-    display: none;
 }

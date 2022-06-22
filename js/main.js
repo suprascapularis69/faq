@@ -1,26 +1,10 @@
-let headers = document.querySelectorAll("[data-name='spoiler-title']");
-let arrows = document.querySelectorAll('.arrow-down');
-let headText = document.querySelectorAll('.header-text');
+let sections = document.querySelectorAll("details");
+sections.forEach((section) => section.addEventListener('toggle', toggleAcordeon));
 
-
-headers.forEach(function(item) {
-    item.addEventListener("click", headerClick);
-});
-
-function headerClick() {
-    this.nextElementSibling.classList.toggle("spoiler-body");
-}
-
-for (let i = 0; i < arrows.length; i++) {
-    headers[i].addEventListener('click', function(e) {
-        e.preventDefault();
-        arrows[i].classList.toggle('arrow-rotate');
-    })
-}
-
-for (let i = 0; i < headText.length; i++) {
-    headers[i].addEventListener('click', function(e) {
-        e.preventDefault();
-        headText[i].classList.toggle('click-text');
-    })
+function toggleAcordeon() {
+  this.open && sections.forEach((section) => {
+    if (section !== this && section.open) {
+      section.open = false;
+    }
+  });
 }
