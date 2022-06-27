@@ -182,27 +182,32 @@
   color: #F47B56;
 }
 
+.header-text.active {
+  font-weight: 700;
+}
+
 .arrow-down {
   background-image: url("../images/arrow-down.svg");
   width: 10px;
   height: 7px;
 }
 
-details[open] summary > .arrow-down {
+.arrow-down.active {
   transform: rotate(180deg);
 }
 
-details[open] summary > .header-text {
-  font-weight: 700;
-}
-
 .list-content {
+  display: none;
   padding: 1px 1px 19px 1px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #787887;
   padding-bottom: 19px;
+}
+
+.list-content.active {
+  display: block;
 }
 
 body {
